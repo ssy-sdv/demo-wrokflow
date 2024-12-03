@@ -32,3 +32,18 @@ button {
     background-color: rgb(113, 113, 113);
   }
 }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  text-align: center;
+  background-color: rgb(113, 113, 113);
+  color: white;
+  padding-bottom: 20px;
+}
+
+.lien{
+    color: white;
+    text-decoration: none;
+}
