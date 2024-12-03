@@ -39,7 +39,6 @@ a {
 
 .footer {
   position: absolute;
-  bottom: 0;
   width: 100vw;
   text-align: center;
   background-color: rgb(113, 113, 113);
@@ -83,4 +82,16 @@ button {
   &:hover {
     border: 2px solid rgb(75, 74, 74);
   }
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+img {
+  width: 50%;
 }
