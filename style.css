@@ -41,9 +41,11 @@ a {
 }
 
 .footer {
+
   /* position: sticky; */
   bottom: 0;
   width: 100%;
+
   text-align: center;
   background-color: rgb(113, 113, 113);
   color: white;
@@ -98,4 +100,17 @@ a {
   text-align: center;
   width: 80%;
 
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 2%;
+}
+
+img {
+  width: 50%;
 }
