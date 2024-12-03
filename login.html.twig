@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+
+<section class="">
+
+  <div class="px-4 py-5 px-md-5 text-center text-lg-start" style="background-color: hsl(0, 0%, 96%)">
+    <div class="container">
+      <div class="row gx-lg-5 align-items-center">
+      <div class="col-md-9 col-lg-6 col-xl-5">
+        <img src={{asset('imports/img/leLogo.jpg')}} alt="Logo" class="Logo-img">
+      </div>
+      <br/>
+
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="card">
+            <div class="card-body py-5 px-md-5">
+              <form action="{{ path('app_login') }}" method="post">
+                <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                  <p class="lead fw-normal mb-0 me-3">Se connecter</p>
+                </div>
+                <br/>
+                <br/>
+                <br/>
+
+                <!-- Zone login -->
+                <div class="form-outline mb-4">
+                <label class="form-label" for="login">Login</label>
+                  <input type="text" id="login" name="_username" class="form-control form-control-lg"
+                    placeholder="Entrer votre login" />
+                </div>
+
+                <!-- Zone password -->
+                <div class="form-outline mb-3">
+                  <label class="form-label" for="password">Mot de passe</label>
+                  <input type="password" id="password" name="_password" class="form-control form-control-lg"
+                    placeholder="Entrer votre mot de passe" />
+                </div>
+                <br/>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <a href="#!" class="text-body">Mot de passe oublié ?</a>
+                </div>
+                <br/>
+                <br/>
+
+                <div class="text-center text-lg-start mt-4 pt-2">
+                  <button type="submit" class="btn btn-primary btn-lg"
+                    style="padding-left: 2.5rem; padding-right: 2.5rem;">Se connecter</button><br/><br/>  
+                  <p class="small fw-bold mt-2 pt-1 mb-0">Vous n'avez pas de compte ? <a href="#!"
+                      class="link-danger">Créer un compte</a></p>
+                </div>
+              </form>
+              <br/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</section>
+
+</body>
+</html>
