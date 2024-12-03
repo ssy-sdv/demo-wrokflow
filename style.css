@@ -1,17 +1,20 @@
 body {
   margin: 0;
-  display: block;
-  width: 100vw;
-  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
   font-family: Arial, Helvetica, sans-serif;
 }
 
 nav {
-  width: 100vw;
+  width: 100%;
   height: 12vh;
   background-color: rgb(142, 142, 142);
   display: flex;
   align-items: center;
+  position: fixed;
 }
 
 nav div {
@@ -38,8 +41,11 @@ a {
 }
 
 .footer {
-  position: absolute;
-  width: 100vw;
+
+  /* position: sticky; */
+  bottom: 0;
+  width: 100%;
+
   text-align: center;
   background-color: rgb(113, 113, 113);
   color: white;
@@ -51,37 +57,49 @@ a {
   text-decoration: none;
 }
 
-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-form {
-  margin: 18px;
+
+.news-page {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  align-items: center;
+
+  margin-top: 30px;
 }
 
-input {
-  margin: 10px;
-  border-radius: 10px;
-  padding: 10px;
-  border: 1px solid grey;
+.news-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-button {
-  background-color: white;
-  margin: 10px;
-  border-radius: 10px;
-  padding: 10px;
-  border: 2px solid grey;
-  width: 10%;
-  transition: all 0.3s ease;
+.news-container div {
+  width: 30%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  background-color: slategrey;
+  border-radius: 2rem;
+}
 
-  &:hover {
-    border: 2px solid rgb(75, 74, 74);
-  }
+.news-container h2 {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.news-container img {
+  width: 80%;
+}
+
+.news-container p {
+  text-align: center;
+  width: 80%;
+
 }
 
 .image-container {
